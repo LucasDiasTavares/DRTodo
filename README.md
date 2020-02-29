@@ -50,6 +50,8 @@ Criando um super usuário
 Rodar o sistema
 - No terminal utilize o comando python manage.py runserver
 
+Consumindo a API
+- Em DRTodo/settings.py procure por CORS_ORIGIN_WHITELIST=[] e altera o "http://localhost:3000", para a url que você deseja utilizar para consumir esta API
 
 ### packages:
 - [Django Rest Framework Docs](https://www.django-rest-framework.org/)
