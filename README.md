@@ -32,9 +32,24 @@ Criar um ambiente virtual:
 Instalar os requerimentos do sistema
 - pip install -r requirements-dev.txt
 
+Configurações do Python Decouple
+- No root do seu projeto crie um arquivo .env
+- Neste arquivo copie as informações do arquivo envSample.txt e cole no seu arquivo .env
+- Nele contém as variáveis de ambiente do sistema
+
+**Em alguns casos é necessario utilizar python3 manage.py nomeDoComando ou python2 manage.py nomeDoComando**
+
+Criando o banco de dados local
+- No terminal utilize o comando python manage.py makemigrations
+- Logo após utilize o comando python manage.py migrate
+
+Criando um super usuário
+- No terminal utilize o comando python manage.py createsuperuser
+- E coloque o login como desejar, para ter acesso ao dashboard de admin do próprio Django
+
 Rodar o sistema
 - No terminal utilize o comando python manage.py runserver
-- **Em alguns casos é necessario utilizar python3 manage.py runserver ou python2 manage.py runserver**
+
 
 ### packages:
 - [Django Rest Framework Docs](https://www.django-rest-framework.org/)
