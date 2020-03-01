@@ -1,4 +1,5 @@
 import os
+import django_heroku
 from decouple import config, Csv
 
 
@@ -101,3 +102,5 @@ STATIC_URL = '/static/'
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:3000",
 ]
+
+django_heroku.settings(locals())
